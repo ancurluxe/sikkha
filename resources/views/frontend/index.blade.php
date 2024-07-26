@@ -581,7 +581,7 @@
     </section>
 
 {{-- Marqueee --}}
-    <section class="marquee grid grid-cols-5 container">
+    <section class="marquee grid grid-cols-5 container p-20">
       <img src="{{asset('frontend/images/rotary.png')}}" alt="">
       <img src="{{asset('frontend/images/rotary.png')}}" alt="">
       <img src="{{asset('frontend/images/rotary.png')}}" alt="">
