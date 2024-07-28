@@ -5,9 +5,9 @@
             <img class="flex-none text-xl font-semibold focus:outline-none focus:opacity-80 sm:w-40 w-24"
                 src="{{ asset('frontend/images/logo.png') }}" alt="">
 
-            <div class="md:hidden">
-                <button type="button"
-                    class="hs-collapse-toggle relative size-7 flex justify-center items-center gap-x-2 rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 focus:outline-none focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none"
+            <div class="lg:hidden">
+                <button type="button "
+                    class=" bg-pink-600 hs-collapse-toggle relative size-7 flex justify-center items-center gap-x-2 rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 focus:outline-none focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none"
                     id="hs-navbar-example-collapse" aria-expanded="false" aria-controls="hs-navbar-example"
                     aria-label="Toggle navigation" data-hs-collapse="#hs-navbar-example">
                     <svg class="hs-collapse-open:hidden shrink-0 size-4" xmlns="http://www.w3.org/2000/svg"
@@ -29,7 +29,7 @@
         </div>
 
         <div id="hs-navbar-example"
-            class="hidden hs-collapse overflow-hidden transition-all duration-300 basis-full grow md:block bg-yellow-400 "
+            class="hidden hs-collapse overflow-hidden transition-all duration-300 basis-full grow lg:block bg-yellow-400 "
             aria-labelledby="hs-navbar-example-collapse ">
             <div
                 class=" md:gap-5 hidden md:flex sm:flex-row sm:items-center sm:justify-end sm:mt-0 sm:ps-5 hover:text-[#ee3e08] ">

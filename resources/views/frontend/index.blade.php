@@ -2,7 +2,7 @@
 
 @section('content')
     {{-- top-header --}}
-    <section class="sm:flex  justify-between p-2 w-full bg-blue-900 space-y-2 container px-12">
+    <section class="md:flex hidden  justify-between p-2 w-full bg-blue-900 space-y-2 container px-12">
         <div class="flex space-x-6">
             <div class="flex space-x-2">
                 <i class="ri-customer-service-fill text-yellow-400"></i>
@@ -26,11 +26,18 @@
         </div>
     </section>
     {{-- navbar --}}
-    <nav class="bg-white p-2  items-center md:flex justify-between hidden container px-12">
-        <div>
-            <img class="w-24" src="{{ asset('frontend/images/logo.png') }}" alt="">
+    <nav class="bg-white p-2  items-center  justify-between container px-12">
+        <div class="flex justify-between">
+            <img class="md:w-24 w-12" src="{{ asset('frontend/images/logo.png') }}" alt="">
+            <div class="flex lg:hidden justify-between bg-white  rounded-xl top-3 pt-1">
+                <img class="xl:w-[120px] w-20 md:w-24" src="./images/logo.png" alt="" />
+                <div class="menu lg:hidden" onclick="toggleSidebar()">
+                    <a href="#" class="nav-toggle hover-link">
+                        <i class="ri-menu-line" id="icon"></i></a>
+                </div>
+            </div>
         </div>
-        <div class="flex space-x-5">
+        <div class="lg:flex space-x-5 hidden">
             <a class="text-blue-900" href="#">Home</a>
             <a class="text-blue-900" href="#">Pages</a>
             <a class="text-blue-900" href="#">Elements</a>
@@ -41,7 +48,9 @@
             <i class="ri-search-line text-blue-900"></i>
             <i class="ri-shopping-cart-fill text-blue-900"></i>
         </div>
+
     </nav>
+
 
     <!-- mobile-nav -->
     <section>
@@ -56,13 +65,7 @@
             <a class="text-blue-900" href="#">Contact</a>
 
         </nav>
-        <div class="flex lg:hidden justify-between bg-white mx-3 rounded-xl top-3 p-2">
-            <img class="xl:w-[120px] w-20 md:w-24" src="./images/logo.png" alt="" />
-            <div class="menu lg:hidden" onclick="toggleSidebar()">
-                <a href="#" class="nav-toggle hover-link">
-                    <i class="ri-menu-line" id="icon"></i></a>
-            </div>
-        </div>
+
 
         <script>
             function toggleSidebar() {
@@ -580,14 +583,12 @@
         </div>
     </section>
 
-{{-- Marqueee --}}
+    {{-- Marqueee --}}
     <section class="marquee grid grid-cols-5 container p-20">
-      <img src="{{asset('frontend/images/rotary.png')}}" alt="">
-      <img src="{{asset('frontend/images/rotary.png')}}" alt="">
-      <img src="{{asset('frontend/images/rotary.png')}}" alt="">
-      <img src="{{asset('frontend/images/rotary.png')}}" alt="">
-      <img src="{{asset('frontend/images/rotary.png')}}" alt="">    
+        <img src="{{ asset('frontend/images/rotary.png') }}" alt="">
+        <img src="{{ asset('frontend/images/rotary.png') }}" alt="">
+        <img src="{{ asset('frontend/images/rotary.png') }}" alt="">
+        <img src="{{ asset('frontend/images/rotary.png') }}" alt="">
+        <img src="{{ asset('frontend/images/rotary.png') }}" alt="">
     </section>
-  
-
 @endsection
