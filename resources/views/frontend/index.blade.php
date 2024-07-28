@@ -1,17 +1,18 @@
 @extends('frontend.layouts.master')
 
 @section('content')
-    <!-- about us banner -->
+    <!--  banner -->
     <section class="relative">
         <img src="{{ asset('frontend/images/banner.jpg') }}" alt="">
-        <div class="absolute top-40 px-12 space-y-4 w-[800px]">
-            <p class="  text-6xl font-bold text-white">Admission Going On Edura University</p>
-            <p class="text-6xl font-extrabold text-white"></p>
-            <p class="text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, facere ab at explicabo
+        <div class="absolute md:pt-14 lg:pt-0 top-4 lg:top-40 sm:px-12 px-6 space-y-2 sm:space-y-4 md:w-[800px] w-96">
+            <p class=" text-xl lg:text-6xl font-bold text-pink-500">Admission Going On Edura University</p>
+            <p class="text-6xl font-extrabold text-pink-500"></p>
+            <p class="text-white">Lorem ab at explicabo
                 eum reprehenderitkjsiuha jsjadhauid jdsjkadiu
                 e.</p>
-            <button class="bg-yellow-500 relative w-32 h-10 font-bold text-md ">ADMIT NOW<div
-                    class="w-32 h-10 absolute -right-2 top-2  outline outline-yellow-500"></div></button>
+            <button class="bg-yellow-500 relative md:w-32 sm:h-10 sm:font-bold sm:text-md px-2 ">ADMIT NOW<div
+                    class="md:w-32 w-24 h-6 sm:h-10 absolute -right-2 top-2  outline outline-yellow-500"></div>
+            </button>
         </div>
 
     </section>
@@ -91,7 +92,7 @@
             <p class="text-lg text-center  text-white"> Our Latest Course Our Latest Course </p>
         </div>
         {{-- cards --}}
-        <div class="grid md:grid-cols-3 gap-8  ">
+        <div class="grid md:grid-cols-2 gap-8  ">
 
             {{-- card-1 --}}
             <div class="bg-white ">
@@ -199,7 +200,7 @@
         <div class=" ">
             <div class="grid lg:grid-cols-4 sm:grid-cols-2 gap-10 ">
                 {{-- card-1 --}}
-                <div class="  p-2">
+                <div class=" w-full p-2">
                     <img class=" rounded-md" src="{{ asset('frontend/images/pp1.jpg') }}" alt="">
                     <div class=" text-center">
                         <p class="font-bold text-lg ">Harish Pandey</p>
@@ -250,7 +251,7 @@
             <p class="text-lg text-center  text-white"> Our Latest Course Our Latest Course </p>
         </div>
         {{-- cards --}}
-        <div class="grid md:grid-cols-2 space-x-4 space-y-4 ">
+        <div class="grid lg:grid-cols-2 space-x-4 space-y-4 ">
             {{-- card-1 --}}
             <div class=" grid md:grid-cols-10 shadow-lg rounded-lg ">
                 <div class="col-span-4">
