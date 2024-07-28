@@ -1,178 +1,83 @@
-<header class="relative flex flex-wrap sm:justify-start sm:flex-nowrap w-full bg-white text-sm py-3">
-    <nav class=" max-w-[85rem] sm:w-full px-4 sm:flex sm:items-center sm:justify-between sm:mx-auto  ">
-        <div class="flex items-center justify-between bg-red-500 w-full">
-
-            <img class="flex-none text-xl font-semibold focus:outline-none focus:opacity-80 sm:w-40 w-24"
-                src="{{ asset('frontend/images/logo.png') }}" alt="">
-
-            <div class="lg:hidden">
-                <button type="button "
-                    class=" bg-pink-600 hs-collapse-toggle relative size-7 flex justify-center items-center gap-x-2 rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 focus:outline-none focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none"
-                    id="hs-navbar-example-collapse" aria-expanded="false" aria-controls="hs-navbar-example"
-                    aria-label="Toggle navigation" data-hs-collapse="#hs-navbar-example">
-                    <svg class="hs-collapse-open:hidden shrink-0 size-4" xmlns="http://www.w3.org/2000/svg"
-                        width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <line x1="3" x2="21" y1="6" y2="6" />
-                        <line x1="3" x2="21" y1="12" y2="12" />
-                        <line x1="3" x2="21" y1="18" y2="18" />
-                    </svg>
-                    <svg class="hs-collapse-open:block hidden shrink-0 size-4" xmlns="http://www.w3.org/2000/svg"
-                        width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M18 6 6 18" />
-                        <path d="m6 6 12 12" />
-                    </svg>
-                    <span class="sr-only">Toggle navigation</span>
-                </button>
+    {{-- top-header --}}
+    <section class="md:flex hidden  justify-between p-2 w-full bg-blue-900 space-y-2 container px-12">
+        <div class="flex space-x-6">
+            <div class="flex space-x-2">
+                <i class="ri-customer-service-fill text-yellow-400"></i>
+                <p class="text-white">+977 987654321</p>
+                <p class="text-white">|</p>
+            </div>
+            <div class="flex space-x-2 ">
+                <i class="ri-mail-fill text-yellow-400"></i>
+                <P class="text-white">mmmmm@gmail.com</P>
             </div>
         </div>
+        <div class="flex space-x-2 text-yellow-400">
+            <i class="ri-twitter-fill"></i>
+            <p>|</p>
+            <i class="ri-facebook-circle-fill"></i>
+            <p>|</p>
+            <i class="ri-pinterest-fill"></i>
+            <p>|</p>
+            <i class="ri-instagram-fill"></i>
 
-        <div id="hs-navbar-example"
-            class="hidden hs-collapse overflow-hidden transition-all duration-300 basis-full grow lg:block bg-yellow-400 "
-            aria-labelledby="hs-navbar-example-collapse ">
-            <div
-                class=" md:gap-5 hidden md:flex sm:flex-row sm:items-center sm:justify-end sm:mt-0 sm:ps-5 hover:text-[#ee3e08] ">
-                <a class="md:font-semibold text-base text-black focus:outline-none" href="#"
-                    aria-current="page">Home</a>
-                <a class="md:font-semibold text-base text-black hover:text-[#ee3e08]  focus:outline-none focus:text-gray-400"
-                    href="#">About Us</a>
-
-                <div class="hs-dropdown [--strategy:static] sm:[--strategy:fixed] [--adaptive:none] ">
-                    <button id="hs-navbar-example-dropdown" type="button"
-                        class="hs-dropdown-toggle flex items-center w-full md:font-semibold text-base text-black hover:text-[#ee3e08] focus:outline-none focus:text-gray-400 "
-                        aria-haspopup="menu" aria-expanded="false" aria-label="Mega Menu">
-                        Services
-                        <svg class="hs-dropdown-open:-rotate-180 sm:hs-dropdown-open:rotate-0 duration-300 ms-1 shrink-0 size-4"
-                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round">
-                            <path d="m6 9 6 6 6-6" />
-                        </svg>
-                    </button>
-
-                    <div class="hs-dropdown-menu transition-[opacity,margin] ease-in-out duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 sm:w-48 z-10 bg-white sm:shadow-md rounded-lg p-1 space-y-1 sm: before:absolute top-full sm:border before:-top-5 before:start-0 before:w-full before:h-5 hidden"
-                        role="menu" aria-orientation="vertical" aria-labelledby="hs-navbar-example-dropdown">
-                        <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100"
-                            href="#">
-                            About
-                        </a>
-                        <div
-                            class="hs-dropdown [--strategy:static] sm:[--strategy:absolute] [--adaptive:none] relative">
-                            <button id="hs-navbar-example-dropdown-sub" type="button"
-                                class="hs-dropdown-toggle w-full flex justify-between items-center text-sm text-gray-800 rounded-lg py-2 px-3 hover:bg-gray-100 focus:outline-none focus:bg-gray-100">
-                                Sub Menu
-                                <svg class="hs-dropdown-open:-rotate-180 sm:hs-dropdown-open:-rotate-90 sm:-rotate-90 duration-300 ms-2 shrink-0 size-4"
-                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <path d="m6 9 6 6 6-6" />
-                                </svg>
-                            </button>
-
-                            <div class="hs-dropdown-menu transition-[opacity,margin] ease-in-out duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 sm:w-48 hidden z-10 sm:mt-2 bg-white sm:shadow-md rounded-lg sm: before:absolute sm:border before:-end-5 before:top-0 before:h-full before:w-5 sm:!mx-[10px] top-0 end-full"
-                                role="menu" aria-orientation="vertical"
-                                aria-labelledby="hs-navbar-example-dropdown-sub">
-                                <div class="p-1 space-y-1">
-                                    <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100"
-                                        href="#">
-                                        About
-                                    </a>
-                                    <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100"
-                                        href="#">
-                                        Downloads
-                                    </a>
-                                    <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100"
-                                        href="#">
-                                        Team Account
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100"
-                            href="#">
-                            Downloads
-                        </a>
-                        <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-[] focus:outline-none focus:bg-gray-100"
-                            href="#">
-                            Team Account
-                        </a>
-                    </div>
+        </div>
+    </section>
+    {{-- navbar --}}
+    <nav class="bg-white p-2  items-center flex justify-between container px-12">
+        <div class="flex justify-between">
+            <div class="flex gap-2 items-center"> <i class="ri-book-open-fill text-yellow-400 text-4xl"></i>
+                <p class="text-blue-900 text-2xl font-extrabold">Sikkha</p>
+            </div>
+            <div class="flex lg:hidden justify-between bg-white  rounded-xl top-3 pt-1">
+                <img class="xl:w-[120px] w-20 md:w-24" src="./images/logo.png" alt="" />
+                <div class="menu lg:hidden" onclick="toggleSidebar()">
+                    <a href="#" class="nav-toggle hover-link">
+                        <i class="ri-menu-line" id="icon"></i></a>
                 </div>
-
-
-                <div class="hs-dropdown [--strategy:static] sm:[--strategy:fixed] [--adaptive:none] ">
-                    <button id="hs-navbar-example-dropdown" type="button"
-                        class="hs-dropdown-toggle flex items-center w-full md:font-semibold text-base text-black hover:text-[#ee3e08] focus:outline-none focus:text-gray-400 "
-                        aria-haspopup="menu" aria-expanded="false" aria-label="Mega Menu">
-                        Courses
-                        <svg class="hs-dropdown-open:-rotate-180 sm:hs-dropdown-open:rotate-0 duration-300 ms-1 shrink-0 size-4"
-                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round">
-                            <path d="m6 9 6 6 6-6" />
-                        </svg>
-                    </button>
-
-                    <div class="hs-dropdown-menu transition-[opacity,margin] ease-in-out duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 sm:w-48 z-10 bg-white sm:shadow-md rounded-lg p-1 space-y-1 sm: before:absolute top-full sm:border before:-top-5 before:start-0 before:w-full before:h-5 hidden"
-                        role="menu" aria-orientation="vertical" aria-labelledby="hs-navbar-example-dropdown">
-                        <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100"
-                            href="#">
-                            About
-                        </a>
-                        <div
-                            class="hs-dropdown [--strategy:static] sm:[--strategy:absolute] [--adaptive:none] relative">
-                            <button id="hs-navbar-example-dropdown-sub" type="button"
-                                class="hs-dropdown-toggle w-full flex justify-between items-center text-sm text-gray-800 rounded-lg py-2 px-3 hover:bg-gray-100 focus:outline-none focus:bg-gray-100">
-                                Sub Menu
-                                <svg class="hs-dropdown-open:-rotate-180 sm:hs-dropdown-open:-rotate-90 sm:-rotate-90 duration-300 ms-2 shrink-0 size-4"
-                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="m6 9 6 6 6-6" />
-                                </svg>
-                            </button>
-
-                            <div class="hs-dropdown-menu transition-[opacity,margin] ease-in-out duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 sm:w-48 hidden z-10 sm:mt-2 bg-white sm:shadow-md rounded-lg sm: before:absolute sm:border before:-end-5 before:top-0 before:h-full before:w-5 sm:!mx-[10px] top-0 end-full"
-                                role="menu" aria-orientation="vertical"
-                                aria-labelledby="hs-navbar-example-dropdown-sub">
-                                <div class="p-1 space-y-1">
-                                    <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800  hover:bg-gray-100 focus:outline-none focus:bg-gray-100"
-                                        href="#">
-                                        About
-                                    </a>
-                                    <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100"
-                                        href="#">
-                                        Downloads
-                                    </a>
-                                    <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100"
-                                        href="#">
-                                        Team Account
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100"
-                            href="#">
-                            Downloads
-                        </a>
-                        <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100"
-                            href="#">
-                            Team Account
-                        </a>
-                    </div>
-                </div>
-
-
-                <a class="md:font-semibold text-base text-black focus:outline-none focus:text-gray-400 hover:text-[#ee3e08]"
-                    href="#">Scholorship</a>
-                <a class="md:font-semibold text-base text-black hover:text-[#ee3e08] focus:outline-none focus:text-gray-400"
-                    href="#">Blogs</a>
-                <a class="md:font-semibold text-base text-black hover:text-[#ee3e08] focus:outline-none focus:text-gray-400"
-                    href="#">Success Stories</a>
-
-                <button class="bg-[#f51D05] text-white p-2 md:p-3 md:px-7 rounded-md  ">Contact Us</button>
             </div>
         </div>
+        <div class="lg:flex space-x-5 hidden">
+            <a class="text-blue-900" href="#">Home</a>
+            <a class="text-blue-900" href="#">Pages</a>
+            <a class="text-blue-900" href="#">Elements</a>
+            <a class="text-blue-900" href="#">Courses</a>
+            <a class="text-blue-900" href="#">News</a>
+            <a class="text-blue-900" href="#">Contact</a>
+            <p class="text-blue-900">|</p>
+            <i class="ri-search-line text-blue-900"></i>
+            <i class="ri-shopping-cart-fill text-blue-900"></i>
+        </div>
+
     </nav>
-</header>
+
+
+    <!-- mobile-nav -->
+    <section>
+        <nav class="sidebar bg-white w-[200px] px-9 z-10 fixed hidden flex-col py-3 shadow-md">
+
+            <img class="w-24" src="{{ asset('frontend/images/logo.png') }}" alt="" /></li>
+            <a class="text-blue-900" href="#">Home</a>
+            <a class="text-blue-900" href="#">Pages</a>
+            <a class="text-blue-900" href="#">Elements</a>
+            <a class="text-blue-900" href="#">Courses</a>
+            <a class="text-blue-900" href="#">News</a>
+            <a class="text-blue-900" href="#">Contact</a>
+
+        </nav>
+
+
+        <script>
+            function toggleSidebar() {
+                var icon = document.getElementById("icon");
+                const sidebar = document.querySelector(".sidebar");
+                if (sidebar.style.display === "flex") {
+                    icon.classList.add("ri-menu-line");
+                    sidebar.style.display = "none";
+                } else {
+                    icon.classList.remove("ri-menu-line");
+                    icon.classList.add("ri-close-line");
+                    sidebar.style.display = "flex";
+                }
+            }
+        </script>
+    </section>

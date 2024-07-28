@@ -2,19 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.gradient-1 {
-    background: rgb(14, 2, 238);
-    background: linear-gradient(
-        74deg,
-        rgb(156, 151, 247) 7%,
-        rgb(136, 141, 244) 37%,
-        rgba(0, 212, 255, 1) 96%
-    );
-}
-
-.blob {
-    background-image: url("data:image/svg+xml;utf8,%3Csvg viewBox=%220 0 1000 1000%22 xmlns=%22http:%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cdefs%3E%3ClinearGradient id=%22b%22 gradientTransform=%22rotate(-75 .5 .5)%22%3E%3Cstop offset=%220%25%22 stop-color=%22%230d05c4%22%2F%3E%3Cstop offset=%2233.333%25%22 stop-color=%22%23687ffd%22%2F%3E%3Cstop offset=%2266.667%25%22 stop-color=%22%235cd4ef%22%2F%3E%3Cstop offset=%22100%25%22 stop-color=%22%23bef3ff%22%2F%3E%3C%2FlinearGradient%3E%3CclipPath id=%22a%22%3E%3Cpath fill=%22currentColor%22 d=%22M638 642.5Q336 785 294 427.5T596 285q344 215 42 357.5Z%22%2F%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%3Cg clip-path=%22url(%23a)%22%3E%3Cpath fill=%22url(%23b)%22 d=%22M638 642.5Q336 785 294 427.5T596 285q344 215 42 357.5Z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
-}
 .swiper {
     width: 100%;
     height: 100%;
