@@ -1,5 +1,5 @@
 <footer class="relative">
-    <section class="grid md:grid-cols-5 space-x-8 space-y-8 bg-blue-900 container px-12 py-12 pt-28">
+    <section class="grid md:grid-cols-3 lg:grid-cols-5 space-x-8 space-y-8 bg-blue-900  px-12 py-12 pt-28">
         <div class="text-white flex flex-col pt-10">
 
             <div class="flex gap-2 items-center"> <i class="ri-book-open-fill text-yellow-400 text-4xl"></i>
@@ -102,4 +102,7 @@
         </div>
 
     </div>
+
+    <div class="border-t-2 p-3 bg-blue-900 text-white text-center">Copyright Policy @SHIKKHA
+    , 2024 </div>
 </footer>

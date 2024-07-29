@@ -10,5 +10,8 @@ class FrontendController extends Controller
     public function  index(){
         return view('frontend.index');
     }
+    public function  elements(){
+        return view('frontend.elements.index');
+    }
 
 }

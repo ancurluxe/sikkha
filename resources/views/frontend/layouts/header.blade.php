@@ -1,17 +1,18 @@
     {{-- top-header --}}
-    <section class="md:flex hidden  justify-between p-2 w-full bg-blue-900 space-y-2 container px-12">
-        <div class="flex space-x-6">
+    <section class="sm:flex hidden  justify-between p-2 w-full bg-blue-900 space-y-2  px-12">
+        <div class="flex space-x-2">
             <div class="flex space-x-2">
                 <i class="ri-customer-service-fill text-yellow-400"></i>
                 <p class="text-white">+977 987654321</p>
-                <p class="text-white">|</p>
             </div>
+            <p class="text-white">|</p>
+
             <div class="flex space-x-2 ">
                 <i class="ri-mail-fill text-yellow-400"></i>
                 <P class="text-white">mmmmm@gmail.com</P>
             </div>
         </div>
-        <div class="flex space-x-2 text-yellow-400">
+        <div class="flex space-x-4 text-yellow-400">
             <i class="ri-twitter-fill"></i>
             <p>|</p>
             <i class="ri-facebook-circle-fill"></i>
@@ -23,8 +24,8 @@
         </div>
     </section>
     {{-- navbar --}}
-    <nav class="bg-white p-2  items-center flex justify-between container px-12">
-        <div class="flex justify-between">
+    <nav class="bg-white p-2  items-center flex justify-between  mx-auto px-12">
+        <div class="flex justify-between w-full">
             <div class="flex gap-2 items-center"> <i class="ri-book-open-fill text-yellow-400 text-4xl"></i>
                 <p class="text-blue-900 text-2xl font-extrabold">Sikkha</p>
             </div>
@@ -39,7 +40,7 @@
         <div class="lg:flex space-x-5 hidden">
             <a class="text-blue-900" href="#">Home</a>
             <a class="text-blue-900" href="#">Pages</a>
-            <a class="text-blue-900" href="#">Elements</a>
+            <a class="text-blue-900" href={{ route('elements') }}>Elements</a>
             <a class="text-blue-900" href="#">Courses</a>
             <a class="text-blue-900" href="#">News</a>
             <a class="text-blue-900" href="#">Contact</a>
@@ -55,7 +56,9 @@
     <section>
         <nav class="sidebar bg-white w-[200px] px-9 z-10 fixed hidden flex-col py-3 shadow-md">
 
-            <img class="w-24" src="{{ asset('frontend/images/logo.png') }}" alt="" /></li>
+            <div class="flex gap-2 items-center"> <i class="ri-book-open-fill text-yellow-400 text-4xl"></i>
+                <p class="text-blue-900 text-2xl font-extrabold">Sikkha</p>
+            </div>
             <a class="text-blue-900" href="#">Home</a>
             <a class="text-blue-900" href="#">Pages</a>
             <a class="text-blue-900" href="#">Elements</a>

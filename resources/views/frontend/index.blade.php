@@ -3,7 +3,7 @@
 @section('content')
     <!--  banner -->
     <section class="relative">
-        <img src="{{ asset('frontend/images/banner.jpg') }}" alt="">
+        <img class="w-full" src="{{ asset('frontend/images/banner.jpg') }}" alt="">
         <div class="absolute md:pt-14 lg:pt-0 top-4 lg:top-40 sm:px-12 px-6 space-y-2 sm:space-y-4 md:w-[800px] w-96">
             <p class=" text-xl lg:text-6xl font-bold text-pink-500">Admission Going On Edura University</p>
             <p class="text-6xl font-extrabold text-pink-500"></p>
@@ -19,7 +19,7 @@
 
 
     {{-- welcome to our sikkha --}}
-    <section class="container px-12">
+    <section class=" px-12">
         <div class="flex justify-center align-center">
             <div class="py-10 grid md:grid-cols-2 items-center ">
                 <div class="space-y-4">
@@ -45,7 +45,7 @@
     </section>
 
     {{-- scholorship- cards --}}
-    <section class="container px-12">
+    <section class=" px-12">
         <div class="grid md:grid-cols-2 gap-4 ">
             {{-- cards-1 --}}
             <div
@@ -85,14 +85,14 @@
         </div>
     </section>
     {{-- Our latest course --}}
-    <section class="bg-blue-900 my-10 py-8 container px-12">
+    <section class="bg-blue-900 my-10 py-8  px-12">
 
         <div class="text-center py-4">
             <p class="text-xl text-center font-bold text-white">Our Latest Course</p>
             <p class="text-lg text-center  text-white"> Our Latest Course Our Latest Course </p>
         </div>
         {{-- cards --}}
-        <div class="grid md:grid-cols-2 gap-8  ">
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8  ">
 
             {{-- card-1 --}}
             <div class="bg-white ">
@@ -188,7 +188,7 @@
     </section>
 
     {{-- Our Experienced Advisors --}}
-    <section class="container px-12">
+    <section class=" px-12">
 
         <div class=" py-4">
             <p class="text-xl text-center font-bold text-blue-900">Our Experienced Advisors</p>
@@ -201,7 +201,7 @@
             <div class="grid lg:grid-cols-4 sm:grid-cols-2 gap-10 ">
                 {{-- card-1 --}}
                 <div class=" w-full p-2">
-                    <img class=" rounded-md" src="{{ asset('frontend/images/pp1.jpg') }}" alt="">
+                    <img class=" rounded-md w-full" src="{{ asset('frontend/images/pp1.jpg') }}" alt="">
                     <div class=" text-center">
                         <p class="font-bold text-lg ">Harish Pandey</p>
                         <p class="text-gray-600 text- ">Senior Developer</p>
@@ -211,7 +211,7 @@
                 </div>
                 {{-- card-2 --}}
                 <div class="  p-2">
-                    <img class=" rounded-md" src="{{ asset('frontend/images/pp2.jpg') }}" alt="">
+                    <img class=" rounded-md w-full" src="{{ asset('frontend/images/pp2.jpg') }}" alt="">
                     <div>
                         <p class="font-bold text-center text-lg px-2">Harish Pandey</p>
                         <p class="text-gray-600 text-center px-2">Senior Developer</p>
@@ -221,7 +221,7 @@
                 </div>
                 {{-- card-3 --}}
                 <div class="  p-2">
-                    <img class=" rounded-md" src="{{ asset('frontend/images/teammember3.jpg') }}" alt="">
+                    <img class=" rounded-md w-full" src="{{ asset('frontend/images/teammember3.jpg') }}" alt="">
                     <div>
                         <p class="font-bold text-center px-2 text-lg">Harish Pandey</p>
                         <p class="text-gray-600 text-center px-2">Senior Developer</p>
@@ -231,7 +231,7 @@
                 </div>
                 {{-- card-4 --}}
                 <div class=" p-2">
-                    <img class=" rounded-md" src="{{ asset('frontend/images/teammember4.jpg') }}" alt="">
+                    <img class=" rounded-md w-full" src="{{ asset('frontend/images/teammember4.jpg') }}" alt="">
                     <div>
                         <p class="font-bold text-center px-2 text-lg">Harish Pandey</p>
                         <p class="text-gray-600 text-center px-2">Senior Developer</p>
@@ -244,7 +244,7 @@
     </section>
 
     {{-- Upcoming-events --}}
-    <section class="bg-blue-900 my-10 py-8 container px-12">
+    <section class="bg-blue-900 my-10 py-8  px-12">
 
         <div class="text-center py-4">
             <p class="text-xl text-center font-bold text-white">Our Upcoming events</p>
@@ -255,7 +255,7 @@
             {{-- card-1 --}}
             <div class=" grid md:grid-cols-10 shadow-lg rounded-lg ">
                 <div class="col-span-4">
-                    <img class="h-full w-full " src="{{ asset('frontend/images/events (1).png') }}" alt="">
+                    <img class="h-full  w-full " src="{{ asset('frontend/images/events (1).png') }}" alt="">
                 </div>
                 <div class="bg-white  px-6 pt-12 col-span-6">
                     <div class=" flex gap-3">
@@ -361,7 +361,7 @@
     </section>
 
     {{-- what our students --}}
-    <section class="container px-12 pb-10">
+    <section class=" px-12 pb-10">
         <div class="text-center">
             <p class="text-3xl text-center font-bold">What Our Students</p>
             <p class="text-lg text-center text-gray-600"> Our Latest Course What Our Student Our Latest Course </p>
@@ -482,7 +482,7 @@
     </section>
 
     {{-- latest news --}}
-    <section class="container px-12 bg-gray-300 py-10 ">
+    <section class=" px-12 bg-gray-300 py-10 ">
         <div class="text-center">
             <p class="text-xl text-center font-bold">Latest News</p>
             <p class="text-lg text-center"> Our Latest news What Our Student Our Latest news </p>
@@ -545,7 +545,7 @@
     </section>
 
     {{-- Marqueee --}}
-    <section class="marquee grid grid-cols-5 container p-20">
+    <section class="marquee grid grid-cols-5  p-20">
         <img src="{{ asset('frontend/images/rotary.png') }}" alt="">
         <img src="{{ asset('frontend/images/rotary.png') }}" alt="">
         <img src="{{ asset('frontend/images/rotary.png') }}" alt="">
