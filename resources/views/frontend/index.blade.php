@@ -4,13 +4,14 @@
     <!--  banner -->
     <section class="relative">
         <img class="w-full" src="{{ asset('frontend/images/banner.jpg') }}" alt="">
-        <div class="absolute md:pt-14 lg:pt-0 top-4 lg:top-40 sm:px-12 px-6 space-y-2 sm:space-y-4 md:w-[800px] w-96">
-            <p class=" text-xl lg:text-6xl font-bold text-pink-500">Admission Going On Edura University</p>
-            <p class="text-6xl font-extrabold text-pink-500"></p>
-            <p class="text-white">Lorem ab at explicabo
+        <div
+            class="absolute md:pt-14 lg:pt-0 top-4 lg:top-40 sm:px-12 px-6 space-y-2 sm:space-y-6 md:w-[800px] w-full 2xl:w-[1500px] ">
+            <p class=" text-xl md:text-4xl lg:text-6xl 2xl:text-9xl font-bold text-white">Admission Going On Edura University
+            </p>
+            <p class="text-white xl:text-3xl">Lorem ab at explicabo
                 eum reprehenderitkjsiuha jsjadhauid jdsjkadiu
                 e.</p>
-            <button class="bg-yellow-500 relative md:w-32 sm:h-10 sm:font-bold sm:text-md px-2 ">ADMIT NOW<div
+            <button class="bg-yellow-500 relative md:w-32  sm:h-10 sm:font-bold sm:text-md 2xl:text-xl px-2 ">ADMIT NOW<div
                     class="md:w-32 w-24 h-6 sm:h-10 absolute -right-2 top-2  outline outline-yellow-500"></div>
             </button>
         </div>
@@ -31,11 +32,11 @@
                         dignissimos? Lorem ipsum dolor sit amet consecteturum tenetur, minus, dolor modi? Molestias nam
                         ducimus, dolore architecto nulla dolorem.</p>
                     <button class="bg-yellow-500 relative w-32 h-10 font-bold text-md ">ADMIT NOW<div
-                            class="w-32 h-10 absolute -right-2 top-2  outline outline-yellow-500"></div></button>
+                            class="w-32 h-10 absolute -right-2 top-2  outline outline-yellow-500"></div>
+                    </button>
                 </div>
 
-
-                <div class="flex justify-center align-center">
+                <div class="flex justify-center align-center mt-10">
                     <img class="rounded-tl-[300px] rounded-tr-[300px] rounded-b-[100px] w-[500px]  "
                         src="{{ asset('frontend/images/main.jpg') }}" alt="">
                 </div>
@@ -251,109 +252,110 @@
             <p class="text-lg text-center  text-white"> Our Latest Course Our Latest Course </p>
         </div>
         {{-- cards --}}
-        <div class="grid lg:grid-cols-2 space-x-4 space-y-4 ">
+        <div class="grid gap-4 lg:grid-cols-2">
             {{-- card-1 --}}
-            <div class=" grid md:grid-cols-10 shadow-lg rounded-lg ">
-                <div class="col-span-4">
-                    <img class="h-full  w-full " src="{{ asset('frontend/images/events (1).png') }}" alt="">
+            <div class="grid overflow-hidden rounded-lg bg-white shadow-lg md:grid-cols-10">
+                <div class="md:col-span-4">
+                    <img class="h-full w-full object-cover" src="{{ asset('frontend/images/events (1).png') }}"
+                        alt="" />
                 </div>
-                <div class="bg-white  px-6 pt-12 col-span-6">
-                    <div class=" flex gap-3">
-                        <button class="bg-yellow-400 rounded-md p-2 px-4 font-bold ">25
+                <div class="p-6 md:col-span-6">
+                    <div class="flex gap-3">
+                        <button class="rounded-md bg-yellow-400 p-2 px-4 font-bold">
+                            25
                             <p class="font-normal">SEP,2018</p>
                         </button>
                         <div>
-                            <p class="font-semibold">Business Conferences </p>
+                            <p class="font-semibold">Business Conferences</p>
                             <i class="ri-time-fill"> 05:30 AM - 10:30AM </i>
                         </div>
                     </div>
                     <div class="py-2">
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi ?</p>
-
                     </div>
                     <div class="flex gap-1">
                         <p class="text-gray-600">Speaker:</p>
-                        <p class="font-semibold"> Alexander</p>
+                        <p class="font-semibold">Alexander</p>
                     </div>
-
                 </div>
             </div>
+
             {{-- card-2 --}}
-            <div class=" grid md:grid-cols-10 shadow-lg rounded-lg ">
-                <div class="col-span-4">
-                    <img class="h-full w-full " src="{{ asset('frontend/images/events (2).png') }}" alt="">
+            <div class="grid overflow-hidden rounded-lg bg-white shadow-lg md:grid-cols-10">
+                <div class="md:col-span-4">
+                    <img class="h-full w-full object-cover" src="{{ asset('frontend/images/events (2).png') }}"
+                        alt="" />
                 </div>
-                <div class="bg-white px-6 pt-10 col-span-6">
-                    <div class=" flex gap-3">
-                        <button class="bg-yellow-400 rounded-md p-2 px-4 font-bold ">25
+                <div class="p-6 md:col-span-6">
+                    <div class="flex gap-3">
+                        <button class="rounded-md bg-yellow-400 p-2 px-4 font-bold">
+                            25
                             <p class="font-normal">SEP,2018</p>
                         </button>
                         <div>
-                            <p class="font-semibold">Business Conferences </p>
+                            <p class="font-semibold">Business Conferences</p>
                             <i class="ri-time-fill"> 05:30 AM - 10:30AM </i>
                         </div>
                     </div>
                     <div class="py-2">
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi ?</p>
-
                     </div>
                     <div class="flex gap-1">
                         <p class="text-gray-600">Speaker:</p>
-                        <p class="font-semibold"> Alexander</p>
+                        <p class="font-semibold">Alexander</p>
                     </div>
-
                 </div>
             </div>
             {{-- card-3 --}}
-            <div class=" grid md:grid-cols-10 shadow-lg rounded ">
-                <div class="col-span-4">
-                    <img class="h-full w-full " src="{{ asset('frontend/images/events (3).png') }}" alt="">
+            <div class="grid overflow-hidden rounded-lg bg-white shadow-lg md:grid-cols-10">
+                <div class="md:col-span-4">
+                    <img class="h-full w-full object-cover" src="{{ asset('frontend/images/events (3).png') }}"
+                        alt="" />
                 </div>
-                <div class="bg-white px-6 pt-10 col-span-6">
-                    <div class=" flex gap-3">
-                        <button class="bg-yellow-400 rounded-md p-2 px-4 font-bold ">25
+                <div class="p-6 md:col-span-6">
+                    <div class="flex gap-3">
+                        <button class="rounded-md bg-yellow-400 p-2 px-4 font-bold">
+                            25
                             <p class="font-normal">SEP,2018</p>
                         </button>
                         <div>
-                            <p class="font-semibold">Business Conferences </p>
+                            <p class="font-semibold">Business Conferences</p>
                             <i class="ri-time-fill"> 05:30 AM - 10:30AM </i>
                         </div>
                     </div>
                     <div class="py-2">
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi ?</p>
-
                     </div>
                     <div class="flex gap-1">
                         <p class="text-gray-600">Speaker:</p>
-                        <p class="font-semibold"> Alexander</p>
+                        <p class="font-semibold">Alexander</p>
                     </div>
-
                 </div>
             </div>
             {{-- card-4 --}}
-            <div class=" grid md:grid-cols-10 shadow-lg rounded ">
-                <div class="col-span-4">
-                    <img class="h-full w-full " src="{{ asset('frontend/images/events (4).png') }}" alt="">
+            <div class="grid overflow-hidden rounded-lg bg-white shadow-lg md:grid-cols-10">
+                <div class="md:col-span-4">
+                    <img class="h-full w-full object-cover" src="{{ asset('frontend/images/events (4).png') }}"
+                        alt="" />
                 </div>
-                <div class="bg-white px-6 pt-10 col-span-6">
-                    <div class=" flex gap-3">
-                        <button class="bg-yellow-400 rounded-md p-2 px-4 font-bold ">25
+                <div class="p-6 md:col-span-6">
+                    <div class="flex gap-3">
+                        <button class="rounded-md bg-yellow-400 p-2 px-4 font-bold">
+                            25
                             <p class="font-normal">SEP,2018</p>
                         </button>
                         <div>
-                            <p class="font-semibold">Business Conferences </p>
+                            <p class="font-semibold">Business Conferences</p>
                             <i class="ri-time-fill"> 05:30 AM - 10:30AM </i>
                         </div>
                     </div>
                     <div class="py-2">
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi ?</p>
-
                     </div>
                     <div class="flex gap-1">
                         <p class="text-gray-600">Speaker:</p>
-                        <p class="font-semibold"> Alexander</p>
+                        <p class="font-semibold">Alexander</p>
                     </div>
-
                 </div>
             </div>
         </div>
